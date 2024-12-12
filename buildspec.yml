@@ -6,4 +6,4 @@ phases:
   build:
     commands:
       - echo "Running static code analysis with SonarCloud"
-      - mvn verify sonar:sonar -Dsonar.projectKey=tes-test_awsdevsecops -Dsonar.organization=Test -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=bbf523e2d1b047b6102aeb2b178bd55adcdc3ca5
+      - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=tes-test_awsdevsecops -Dsonar.organization=Test -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=bbf523e2d1b047b6102aeb2b178bd55adcdc3ca5
